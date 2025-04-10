@@ -1,0 +1,103 @@
+/*TAGS*/
+body {
+    background-color: rgb(53, 53, 53);
+    font-family: Comic Sans MS;
+    color: rgb(238, 238, 238);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    gap: 10px;
+  }
+
+/*TEXTOS*/
+
+#subtitulo {
+    margin-top: 15%;
+}
+
+/*DIVS*/
+
+#div_adicionar {
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;     
+    justify-content: center;
+    align-items: center;     
+    gap: 20px;    
+    padding: 1%;           
+}
+
+#div_lista {
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+}
+
+#botões_div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/*BOTÕES*/
+
+button {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+}
+
+#botao_adicionar {
+    background-color: rgb(231, 231, 231);
+    border: 1px solid #28a745;
+}
+
+#botao_remover {
+    background-color: #ff0000;
+    width: 50px;
+}
+
+#concluida {
+    border-left: 2px solid #00ff3c;
+  }
+
+#botao_concluir.concluido {
+    background-color: red;
+    color: white;
+  }
+
+/*BOTÕES - ANIMAÇÃO*/
+
+#botao_adicionar:hover {
+    background-color: #28a745;
+    color: white;  
+    border: 1px solid white;
+}
+
+#botao_remover:hover {
+    color: white;  
+    border: 1px solid white;
+}
+
+#botao_concluir:hover {
+    background-color: #b3f0ff;
+      
+    border: 1px solid white;
+}
+
+
