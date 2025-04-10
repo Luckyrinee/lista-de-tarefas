@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import './ListaTarefas.css';
 
 function ListaTarefas() {
     //Armazena todas as tarefas
-    const [tarefas, setTarefas] = useState([]);
+    const [tarefas, setTarefas] = useState(JSON.parse(localStorage.getItem('tarefas')) || []);
     //Armazena o texto digitado para uma nova tarefa
     const [novaTarefa, setNovaTarefa] = useState('');
     //Controla o tipo de ordenação incerida
@@ -65,6 +65,9 @@ function ListaTarefas() {
         setTarefas(tarefasAtualizadas);
     };
     
+    useEffect(() => {
+        localStorage.setItem('tarefas', JSON.stringify(tarefas));
+    }, [tarefas])
 
     return (
         <div>
